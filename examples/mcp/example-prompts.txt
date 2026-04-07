@@ -1,0 +1,224 @@
+# Example Prompts for IntelliJ Agent Controller
+
+Copy and paste these prompts into Claude Desktop or Cursor to test the IntelliJ tool.
+
+## IDE State & Navigation
+
+```
+Take a screenshot of IntelliJ and describe what's currently on screen.
+```
+
+```
+What project is currently open in IntelliJ? Get the project path and tell me what you see.
+```
+
+```
+Navigate to the file MainActivity.kt. Take a screenshot to show me what you found.
+```
+
+```
+Using IntelliJ's Go to Class feature, navigate to HashMap. Take a screenshot to show the result.
+```
+
+## File Operations
+
+```
+Open the file src/Main.kt and show me the first 20 lines of code.
+```
+
+```
+Find the build.gradle file and read its contents. Summarize what dependencies are configured.
+```
+
+```
+Create a new file named TestFile.kt. Show me the template that IntelliJ generated.
+```
+
+```
+In IntelliJ, open the settings file as a new editor tab and take a screenshot.
+```
+
+## UI Interaction
+
+```
+Find and click the green Run button in IntelliJ. Take a screenshot to show the action completed.
+```
+
+```
+Click the File menu and show me what options appear. Take a screenshot of the menu.
+```
+
+```
+Find the search field in IntelliJ and type "Main". Show me the search results.
+```
+
+```
+Locate the debug button (usually green debug icon) and click it. Take a screenshot after clicking.
+```
+
+## Code Formatting & Actions
+
+```
+Open src/Main.kt and format the code using IntelliJ's formatter. Show me the result.
+```
+
+```
+Take the currently open editor and execute the "Sort Lines" action. Show me the result.
+```
+
+```
+Open any Java file and execute the "Optimize Imports" action. Take a screenshot to show it worked.
+```
+
+```
+Find and click "View" menu, then locate and click "Tool Windows" option. Show me what appears.
+```
+
+## Build & Running
+
+```
+Click the Build button in IntelliJ. Wait for the build to complete and take a screenshot.
+```
+
+```
+Invoke the Run action in IntelliJ. Wait for it to complete and show me the output window.
+```
+
+```
+Execute the Debug action. Take screenshots showing any debug windows that appear.
+```
+
+```
+Stop any running process in IntelliJ. Take a screenshot showing the build is stopped.
+```
+
+## Complex Workflows
+
+```
+Help me navigate the IDE:
+1. First take a screenshot to see the current state
+2. Open the settings/preferences
+3. Navigate to Editor settings
+4. Take another screenshot showing where we are
+5. Describe what you see
+```
+
+```
+Let's do a complete code review workflow:
+1. Take a screenshot of the current state
+2. Open src/models/User.kt 
+3. Read the entire file content
+4. Analyze the code structure
+5. Show me what you found
+```
+
+```
+Build and test workflow:
+1. Take a screenshot first
+2. Click the Build button
+3. Wait for build to complete (use smart-wait)
+4. Capture the build output
+5. Tell me if it succeeded or failed
+```
+
+```
+Complete a refactoring task:
+1. First identify where we are
+2. Open the file that needs refactoring
+3. Find the method to refactor
+4. Use IntelliJ's refactoring actions
+5. Show the results
+```
+
+## Troubleshooting Commands
+
+```
+The tool isn't responding. Let me understand the current state:
+1. Try to take a screenshot
+2. If that works, click somewhere in the IDE
+3. Take another screenshot
+4. Tell me what's happening
+```
+
+```
+I want to debug the tool. Please:
+1. Take a screenshot
+2. Find all visible buttons
+3. Tell me what you found
+4. Describe the IDE window structure you see
+```
+
+```
+Check the IDE is responsive:
+1. Get the IDE status
+2. Take a screenshot  
+3. Get the IDE logs to check for errors
+4. Tell me if everything looks okay
+```
+
+## Advanced Scenarios
+
+```
+Multi-file editing scenario:
+1. Take initial screenshot
+2. Open src/common/Constants.kt
+3. Take a screenshot
+4. Open src/ui/MainActivity.kt
+5. Take a screenshot showing both files open
+6. Tell me what you observe
+```
+
+```
+Testing complex navigation:
+1. Open the project structure/file tree
+2. Navigate through folders using the tree
+3. Open src/main/java/com/example/Main.java
+4. Take screenshot showing the path you took
+5. Describe the class you see
+```
+
+```
+Dialog interaction scenario:
+1. Trigger a dialog (e.g., File > New)
+2. Take a screenshot of the dialog
+3. Fill in fields (type text)
+4. Click OK
+5. Take a screenshot showing the result
+```
+
+## Tips for Writing Prompts
+
+1. **Be specific:** "Click the green Run button" not "run"
+2. **Include verification:** "Take a screenshot to verify"
+3. **Break into steps:** Step numbers help Claude stay organized
+4. **Reference previous state:** "From the previous screenshot, find the..."
+5. **Ask for descriptions:** "Describe what you see" helps debugging
+
+## Getting Attention
+
+If the tool seems to be ignoring you:
+
+```
+Important: Use the IntelliJ screen capture tool. Take a screenshot of what's on screen.
+```
+
+```
+Using the IntelliJ controller tool, what UI elements are currently visible?
+```
+
+```
+I want to understand the IDE state. Please use available tools to:
+1. Get the project path
+2. Take a screenshot
+3. Describe all visible UI elements
+```
+
+---
+
+Try these prompts to get started! 
+
+For more information:
+- [CLI Reference](../docs/CLI_REFERENCE.md)
+- [MCP Integration](../docs/MCP_INTEGRATION.md)
+- [Claude Setup](01-claude-setup.md)
+- [Cursor Setup](02-cursor-setup.md)
