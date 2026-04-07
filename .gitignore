@@ -1,0 +1,56 @@
+# Gradle
+.gradle/
+**/build/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# Kotlin / Gradle caches
+.kotlin/
+
+# IntelliJ / IDE
+.idea/
+*.iml
+out/
+**/out/
+
+# Module artifacts
+**/classes/
+**/libs/
+**/tmp/
+**/distributions/
+
+# Gradle TestKit
+/.gradle-test-kit/
+
+# VS Code
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor temp/swap
+*~
+*.swp
+*.swo
+*.bak
+
+# Binaries / archives
+*.jar
+*.war
+*.ear
+
+# Logs and secrets
+*.log
+local.properties
+.env
+*.keystore
+secrets.*
+
+# Eclipse / legacy
+.classpath
+.project
+.settings/
+
+# Allow Gradle wrapper jar and properties (already whitelisted above)
